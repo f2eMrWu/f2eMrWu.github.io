@@ -61,74 +61,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-flexboxNote" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/02/27/flexboxNote/" class="article-date">
-  <time datetime="2016-02-27T13:23:56.000Z" itemprop="datePublished">2016-02-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/27/flexboxNote/">flexbox笔记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="FLEXBOX"><a href="#FLEXBOX" class="headerlink" title="FLEXBOX"></a>FLEXBOX</h1><h2 id="u57FA_u672C_u6982_u5FF5"><a href="#u57FA_u672C_u6982_u5FF5" class="headerlink" title="基本概念"></a>基本概念</h2><ul>
-<li>main axis direction depend on justify-content</li>
-<li>main-start main-end</li>
-<li>main-size width or height</li>
-<li>cross axis</li>
-<li>cross-start cross-end</li>
-<li>cross size height or width</li>
-</ul>
-<h2 id="flexbox_u5C5E_u6027"><a href="#flexbox_u5C5E_u6027" class="headerlink" title="flexbox属性"></a>flexbox属性</h2><ul>
-<li>display: flex | inline-flex</li>
-<li>flex-direction row | row-reverse | column | column-reverse</li>
-<li>flex-wrap: nowrap | wrap | wrap-reverse //有使用固定尺寸情况下</li>
-<li>flex-flow: 复合属性 <flex-direction> || flex-wrap</flex-direction></li>
-<li>justify-content: flex-start | flex-end | center | spce-between | spce-around</li>
-<li>align-items: flex-start | flex-end | center | baseline | stretch</li>
-</ul>
-<h2 id="u5B50_u5143_u7D20"><a href="#u5B50_u5143_u7D20" class="headerlink" title="子元素"></a>子元素</h2><ul>
-<li>order</li>
-<li>flex-grow  number</li>
-<li><p>flex-shrink ???<br><a href="http://www.css88.com/book/css/properties/flex/flex-shrink.htm" target="_blank" rel="external">http://www.css88.com/book/css/properties/flex/flex-shrink.htm</a><br>简单理解为 当flex-container不换行时候，flex-item定义width 相加超过总宽度时候的比例</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"flex"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"flex-item"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"flex-item"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"flex-item"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">	<span class="id">#flex</span><span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value">flex</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">300px</span></span></span>;</span><br><span class="line">	&#125;</span></span><br><span class="line">	<span class="class">.flex-item</span>:<span class="rules">&#123;</span><br><span class="line">		<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">200px</span></span></span>;</span><br><span class="line">	&#125;</span></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>flex-basis ???</p>
-</li>
-<li>flex: none | <flex-grow> flex-shrink? || flex-basis</flex-grow></li>
-<li>align-self</li>
-</ul>
-<h2 id="demo_and_tips"><a href="#demo_and_tips" class="headerlink" title="demo and tips"></a>demo and tips</h2><p>flex的影响只限于子元素 不继承<br>设置子元素 margin: auto; 进行居中操作 整个块的居中而不是文字的居中he<br>flex-basis:10px; width:50px; flex-item 为10px</p>
-<p>##question</p>
-<ul>
-<li>ul flex 子元素 li 宽度变成inline 而不是100%</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/27/flexboxNote/" data-id="cil55tfrx00005cwmvkvfc9n2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-深拷贝学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/02/23/深拷贝学习笔记/" class="article-date">
@@ -157,7 +89,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/02/23/深拷贝学习笔记/" data-id="cil55tftc00015cwm4px2w1mj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/02/23/深拷贝学习笔记/" data-id="cil56g8gq0000bswmz97c1uo0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -209,7 +141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/15/some/target of 2016/" data-id="cil55tfts00055cwmxigjbvla" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/01/15/some/target of 2016/" data-id="cil56g8hv0004bswm9r0rclrr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -252,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/09/新人问题之为什么总是弹出最后一个/" data-id="cil55tftj00025cwm78mozxor" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/01/09/新人问题之为什么总是弹出最后一个/" data-id="cil56g8hj0001bswmoo7vuiqx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
@@ -291,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/01/09/hello-world/" data-id="cil55tftx00065cwmtacg691x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/01/09/hello-world/" data-id="cil56g8hz0005bswmvvlpcmvq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -330,7 +262,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -340,10 +272,6 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2016/02/27/flexboxNote/">flexbox笔记</a>
-          </li>
         
           <li>
             <a href="/2016/02/23/深拷贝学习笔记/">深拷贝学习笔记</a>
